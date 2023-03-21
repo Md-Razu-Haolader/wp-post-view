@@ -1,0 +1,19 @@
+{
+    "name": "razu/posts-view",
+    "description": "A plugin to count and show views of each post.",
+    "type": "wordpress-plugin",
+    "license": "GPL v2",
+    "authors": [
+        {
+            "name": "Md. Razu Haolader",
+            "email": "razu.cse129@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MRH\\WPPostView\\": "includes/"
+        }
+    }
+}
