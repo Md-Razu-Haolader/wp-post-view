@@ -1,4 +1,4 @@
-# Posts View
+# WP Posts View Plugin
 
 It's a **_Wordpress Plugin_** that includes total view count on each post and provides `shortcode` for frontend functionality. And also shows the total post view in admin panel.
 
