@@ -7,9 +7,9 @@
             <th scope="row">
                 <select name="numberposts" id="numberposts">
                     <option disabled="true" selected>Select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                    <?php for ($i = 1; $i <= $total_post; $i++) { ?>
+                        <option value="<?php echo $i ?>"><?php echo $i ?></option>
+                    <?php } ?>
                 </select>
             </th>
         </tr>
