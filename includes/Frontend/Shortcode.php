@@ -34,7 +34,7 @@ class Shortcode
 
         if ($posts) {
             Template::render(
-                'post-list.php',
+                WPPV_INCLUDES . '/Frontend/views/posts/index.php',
                 [
                     'url' => home_url($wp->request),
                     'posts' => $posts,

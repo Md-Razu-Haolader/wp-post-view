@@ -8,7 +8,6 @@ class Template
 {
     public static function render(string $filePath, $data = [])
     {
-        $filePath = WPPV_VIEWS . '/' . $filePath;
         if (file_exists($filePath)) {
             extract($data);
             require_once $filePath;

@@ -15,7 +15,7 @@ class Common
      * 
      * @return string
      */
-    public static function emphasize_text($value, $extension = null)
+    public static function emphasize_text($value, $extension = null): string
     {
         ob_start();
 
@@ -35,7 +35,7 @@ class Common
      * 
      * @return string
      */
-    public static function custom_excerpt($post, $length = 200)
+    public static function custom_excerpt(object $post, int $length = 200): string
     {
         $excerpt = strip_tags($post->post_content);
 
