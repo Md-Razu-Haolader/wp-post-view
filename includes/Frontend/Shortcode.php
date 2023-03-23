@@ -10,7 +10,7 @@ class Shortcode
     /**
      * Shortcode class constructor
      */
-    function __construct()
+    public function __construct()
     {
         add_shortcode('wppv', [$this, 'render_post_view_shortcode']);
     }
@@ -26,9 +26,10 @@ class Shortcode
     public function render_post_view_shortcode($atts, $content = '')
     {
         global $wp;
+        $atts = is_array($atts) ? $atts : [];
         $defaultValues = $this->get_default_values($atts);
-        $args       = shortcode_atts($defaultValues, $atts);
-        $posts      = get_posts($args);
+        $args = shortcode_atts($defaultValues, $atts);
+        $posts = get_posts($args);
 
         ob_start();
 
@@ -74,7 +75,7 @@ class Shortcode
         );
     }
 
-    private function get_selected_post_ids(array $attr): array
+    private function get_selected_post_ids(array $atts): array
     {
         $postIds = [];
         if (isset($atts['ids'])) {
@@ -83,7 +84,7 @@ class Shortcode
         return $postIds;
     }
 
-    private function get_selected_category_ids(array $attr): array
+    private function get_selected_category_ids(array $atts): array
     {
         $category = [];
         if (isset($atts['category'])) {

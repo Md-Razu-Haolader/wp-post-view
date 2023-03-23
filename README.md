@@ -16,7 +16,7 @@ An authorized user can also choose all these as well as the IDs of posts of whic
 
 - `numposts` _[int]_ : Determines the number of posts to be shown.
 - `category` _[string]_ : Determines the category of posts to be shown. The values should be comma (,) seperated for multiple values and no inverted comma ('') is needed.
-- `order` _[string]_ : Determines the category of posts to be shown. If this parameter is given, the posts will be ordered in the given order by the total views. Only _ASC_ or _DESC_ is expected to be the value.
+- `order` _[string]_ : If this parameter is given, the posts will be ordered in the given order by the total views. Only _ASC_ or _DESC_ is expected to be the value.
 - `ids` _[int]_ : Determines the ids of the posts of which excerpts will be shown. If this parameter is not given, excerpt will not be shown for any post. The values should be comma (,) seperated for multiple values and no inverted comma is needed.
 
 ### Example
