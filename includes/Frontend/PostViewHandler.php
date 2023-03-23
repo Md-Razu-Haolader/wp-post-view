@@ -11,7 +11,7 @@ class PostViewHandler
     private string $view_count_meta_key;
     public function __construct()
     {
-        $this->view_count_meta_key = WPPV_COUNT_KEY;
+        $this->view_count_meta_key = WPPV_VIEW_COUNT_KEY;
         add_filter('emphasize_text', [Common::class, 'emphasize_text'], 10, 2);
         add_filter('wp_head', [$this, 'save_total_view_count']);
         add_filter('the_content', [$this, 'get_content_with_view_count']);

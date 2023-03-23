@@ -57,7 +57,7 @@ final class PostView
         define('WPPV_URL', plugins_url('', WPPV_FILE));
         define('WPPV_ASSETS', WPPV_URL . '/assets');
         define('WPPV_INCLUDES', WPPV_PATH . '/includes');
-        define('WPPV_COUNT_KEY', 'wppv_post_views_count');
+        define('WPPV_VIEW_COUNT_KEY', 'wppv_post_views_count');
     }
     /**
      * Initialize hooks

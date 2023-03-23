@@ -35,7 +35,7 @@ class PostColumnCustomizer
     public function show_total_view(string $column, int $post_id): void
     {
         if ($column === 'total_view') {
-            echo (int) get_post_meta($post_id, WPPV_COUNT_KEY, true);
+            echo (int) get_post_meta($post_id, WPPV_VIEW_COUNT_KEY, true);
         }
     }
 }

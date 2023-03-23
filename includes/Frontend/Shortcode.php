@@ -55,7 +55,7 @@ class Shortcode
         $category     = $this->get_selected_category_ids($atts);
         $order        = isset($atts['order']) ? $atts['order'] : 'DESC';
         $order_by     = isset($atts['order']) ? 'meta_value_num' : '';
-        $meta_key     = isset($atts['order']) ? WPPV_COUNT_KEY : '';
+        $meta_key     = isset($atts['order']) ? WPPV_VIEW_COUNT_KEY : '';
 
         if (isset($_POST['wppv-submit'])) {
             $number_posts = isset($_POST['numberposts']) ? $_POST['numberposts'] : $number_posts;

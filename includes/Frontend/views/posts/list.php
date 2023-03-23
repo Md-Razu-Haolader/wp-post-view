@@ -3,7 +3,7 @@
 use MRH\WPPostView\Helpers\Common;
 
 foreach ($posts as $post) {
-    $view_count = Common::emphasize_text((int)get_post_meta($post->ID, WPPV_COUNT_KEY, true), 'Views');
+    $view_count = Common::emphasize_text((int)get_post_meta($post->ID, WPPV_VIEW_COUNT_KEY, true), 'Views');
     $excerpt = '';
     if (in_array($post->ID, $selected_post_ids)) {
         if (has_excerpt($post)) {
