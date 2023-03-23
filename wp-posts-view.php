@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * Plugin Name:       Posts View
  * Plugin URI:        razu.cse129@gmail.com
- * Description:       A plugin to show the view count of each post.
+ * Description:       A plugin to show the view count of each post and shortcode for frontend functionality.
  * Version:           1.0.0
  * Requires at least: 6.1
  * Requires PHP:      8.2
