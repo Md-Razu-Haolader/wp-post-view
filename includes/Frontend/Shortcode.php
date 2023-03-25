@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MRH\WPPostView\Frontend;
 
 use MRH\WPPostView\Helpers\Template;
@@ -18,12 +20,12 @@ class Shortcode
     /**
      * Renders shortcode
      *
-     * @param array $atts
+     * @param array|string $atts
      * @param string $content
      * 
      * @return string
      */
-    public function render_post_view_shortcode($atts, $content = '')
+    public function render_post_view_shortcode(array|string $atts, string $content = ''): string
     {
         global $wp;
         $atts = is_array($atts) ? $atts : [];

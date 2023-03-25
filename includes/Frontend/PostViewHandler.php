@@ -9,6 +9,7 @@ use MRH\WPPostView\Helpers\Common;
 class PostViewHandler
 {
     private string $view_count_meta_key;
+
     public function __construct()
     {
         $this->view_count_meta_key = WPPV_VIEW_COUNT_KEY;
