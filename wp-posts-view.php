@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * Plugin Name:       Posts View
  * Plugin URI:        razu.cse129@gmail.com
- * Description:       A plugin to show the view count of each post and shortcode for frontend functionality.
+ * Description:       A plugin to show the view count of each post, provides shortcode for frontend functionality, shows the total post view column in admin panel and adds a widget to show latest posts in the dashboard.
  * Version:           1.0.0
  * Requires at least: 6.1
  * Requires PHP:      8.2

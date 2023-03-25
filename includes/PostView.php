@@ -4,12 +4,6 @@ declare(strict_types=1);
 
 namespace MRH\WPPostView;
 
-use MRH\WPPostView\Activator;
-use MRH\WPPostView\Frontend;
-use MRH\WPPostView\Admin;
-use MRH\WPPostView\Assets;
-
-
 final class PostView
 {
     /**
@@ -20,6 +14,7 @@ final class PostView
     private static $instance;
 
     const version = '1.0.0';
+    const domain    = 'wppv-post-view';
 
     /**
      * Private class constructor
@@ -59,6 +54,7 @@ final class PostView
         define('WPPV_ASSETS', WPPV_URL . '/assets');
         define('WPPV_INCLUDES', WPPV_PATH . '/includes');
         define('WPPV_VIEW_COUNT_KEY', 'wppv_post_views_count');
+        define('WPPV_DOMAIN', self::domain);
     }
     /**
      * Initialize hooks
@@ -91,10 +87,9 @@ final class PostView
     public function init_classes(): void
     {
         new Assets();
+        new Frontend();
         if (is_admin()) {
             new Admin();
-        } else {
-            new Frontend();
         }
     }
 }

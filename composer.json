@@ -1,6 +1,6 @@
 {
     "name": "razu/posts-view",
-    "description": "A plugin to count and show views of each post.",
+    "description": "A plugin to count and show views of each post, provides `shortcode` for frontend functionality, shows the total post view column in admin panel and adds a widget to show latest posts in the dashboard",
     "type": "wordpress-plugin",
     "license": "GPL v2",
     "authors": [
