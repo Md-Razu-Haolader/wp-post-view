@@ -7,6 +7,7 @@ namespace MRH\WPPostView;
 use MRH\WPPostView\Activator;
 use MRH\WPPostView\Frontend;
 use MRH\WPPostView\Admin;
+use MRH\WPPostView\Assets;
 
 
 final class PostView
@@ -69,7 +70,6 @@ final class PostView
     {
         register_activation_hook(__FILE__, [$this, 'activate']);
         add_action('plugins_loaded', [$this, 'init_classes']);
-        add_action('wp_enqueue_scripts', [$this, 'enqueue_scripts']);
     }
 
     /**
@@ -90,20 +90,11 @@ final class PostView
      */
     public function init_classes(): void
     {
+        new Assets();
         if (is_admin()) {
             new Admin();
         } else {
             new Frontend();
         }
-    }
-
-    /**
-     * Includes the stylesheet
-     *
-     * @return void
-     */
-    public function enqueue_scripts(): void
-    {
-        wp_enqueue_style('wppv-styles', WPPV_ASSETS . '/css/style.css', '', WPPV_VERSION);
     }
 }
