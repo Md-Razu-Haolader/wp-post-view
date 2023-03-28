@@ -6,11 +6,11 @@ namespace MRH\WPPostView\Helpers;
 
 class Template
 {
-    public static function render( string $filePath, array $data = [] ): void
+    public static function render( string $file_path, array $data = [] ): void
     {
-        if ( file_exists( $filePath ) ) {
+        if ( file_exists( $file_path ) ) {
             extract( $data );
-            require $filePath;
+            require $file_path;
         } else {
             throw new \RuntimeException( 'View file not found' );
         }
