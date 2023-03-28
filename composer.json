@@ -21,11 +21,12 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "php": "^8.2"
+        "php": "^8.1"
     },
     "require-dev": {
         "wp-coding-standards/wpcs": "dev-develop",
         "phpcompatibility/phpcompatibility-wp": "dev-master",
+        "friendsofphp/php-cs-fixer": "^3.12",
         "tareq1988/wp-php-cs-fixer": "dev-master",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
         "phpunit/phpunit": "^9.5",
@@ -40,6 +41,8 @@
         "phpunit": "./vendor/bin/phpunit --testdox",
         "fix-cs": "php-cs-fixer fix",
         "test-cs": "php-cs-fixer fix --dry-run -v",
+        "phpcs": "vendor/bin/phpcs",
+        "phpcwp": "./vendor/bin/phpcs -p . --standard=PHPCompatibilityWP",
         "test": ["@phpunit", "@test-cs"]
     }
     

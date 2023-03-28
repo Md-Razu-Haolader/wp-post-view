@@ -8,7 +8,7 @@ class LatestPost
 {
     public function __construct()
     {
-        add_action( 'wp_dashboard_setup', [self::class, 'add_widget'] );
+        add_action( 'wp_dashboard_setup', [$this, 'add_widget'] );
     }
 
     /**
@@ -16,21 +16,19 @@ class LatestPost
      *
      * @return void
      */
-    public static function add_widget()
+    public function add_widget()
     {
         wp_add_dashboard_widget(
             'wppv_widget',
             esc_html__( 'Latest Posts', WPPV_DOMAIN ),
-            [self::class, 'render']
+            [$this, 'render']
         );
     }
 
     /**
      * Renders the posts in the widget.
-     *
-     * @return void
      */
-    public static function render()
+    public function render(): void
     {
         $args = [
             'numberposts' => 5,

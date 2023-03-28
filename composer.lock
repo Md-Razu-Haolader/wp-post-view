@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5576538eb7fae59a9a1c52231d9b5d72",
+    "content-hash": "f48bbf50374c5077a2ab34b045d1e1ee",
     "packages": [],
     "packages-dev": [
         {
@@ -308,12 +308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "e157ef3f3124bbf6fe7ce0ffd109e8a8ef284e7f"
+                "reference": "4b68cf86b766ec429f4f68af648817cdfb360582"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/e157ef3f3124bbf6fe7ce0ffd109e8a8ef284e7f",
-                "reference": "e157ef3f3124bbf6fe7ce0ffd109e8a8ef284e7f",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/4b68cf86b766ec429f4f68af648817cdfb360582",
+                "reference": "4b68cf86b766ec429f4f68af648817cdfb360582",
                 "shasum": ""
             },
             "require": {
@@ -375,9 +375,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/annotations/issues",
-                "source": "https://github.com/doctrine/annotations/tree/2.0.1"
+                "source": "https://github.com/doctrine/annotations/tree/2.0.x"
             },
-            "time": "2023-02-02T22:02:53+00:00"
+            "time": "2023-03-27T17:43:32+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -1041,12 +1041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHPCSExtra.git",
-                "reference": "1f438a488066f13cae67c46ac229fd4419a1bda4"
+                "reference": "d2adbf92ee74aed1225f88184a89e609d8dda1e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHPCSExtra/zipball/1f438a488066f13cae67c46ac229fd4419a1bda4",
-                "reference": "1f438a488066f13cae67c46ac229fd4419a1bda4",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHPCSExtra/zipball/d2adbf92ee74aed1225f88184a89e609d8dda1e3",
+                "reference": "d2adbf92ee74aed1225f88184a89e609d8dda1e3",
                 "shasum": ""
             },
             "require": {
@@ -1097,7 +1097,7 @@
                 "issues": "https://github.com/PHPCSStandards/PHPCSExtra/issues",
                 "source": "https://github.com/PHPCSStandards/PHPCSExtra"
             },
-            "time": "2023-03-26T00:54:44+00:00"
+            "time": "2023-03-27T13:34:42+00:00"
         },
         {
             "name": "phpcsstandards/phpcsutils",
@@ -1499,12 +1499,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "75426870e2c4be6751886751f3e452ec1329adc4"
+                "reference": "b65d59a059d3004a040c16a82e07bbdf6cfdd115"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/75426870e2c4be6751886751f3e452ec1329adc4",
-                "reference": "75426870e2c4be6751886751f3e452ec1329adc4",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b65d59a059d3004a040c16a82e07bbdf6cfdd115",
+                "reference": "b65d59a059d3004a040c16a82e07bbdf6cfdd115",
                 "shasum": ""
             },
             "require": {
@@ -1578,7 +1578,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.6"
             },
             "funding": [
                 {
@@ -1594,7 +1594,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-23T14:30:08+00:00"
+            "time": "2023-03-27T11:43:46+00:00"
         },
         {
             "name": "psr/cache",
@@ -2835,12 +2835,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "516a2684d4545bc6dedbf162480d2a35d451b0ae"
+                "reference": "d5249b03fbc66e6dd01b4030add8218580e6800e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/516a2684d4545bc6dedbf162480d2a35d451b0ae",
-                "reference": "516a2684d4545bc6dedbf162480d2a35d451b0ae",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d5249b03fbc66e6dd01b4030add8218580e6800e",
+                "reference": "d5249b03fbc66e6dd01b4030add8218580e6800e",
                 "shasum": ""
             },
             "require": {
@@ -2923,7 +2923,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-21T18:22:26+00:00"
+            "time": "2023-03-27T14:35:52+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -4238,12 +4238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress-Coding-Standards.git",
-                "reference": "f4d4ff58ddfe1ca79575e60c552543966a5ed7b2"
+                "reference": "2e76b2061246fbee2ea8461c57b67b6b0c010223"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress-Coding-Standards/zipball/f4d4ff58ddfe1ca79575e60c552543966a5ed7b2",
-                "reference": "f4d4ff58ddfe1ca79575e60c552543966a5ed7b2",
+                "url": "https://api.github.com/repos/WordPress/WordPress-Coding-Standards/zipball/2e76b2061246fbee2ea8461c57b67b6b0c010223",
+                "reference": "2e76b2061246fbee2ea8461c57b67b6b0c010223",
                 "shasum": ""
             },
             "require": {
@@ -4251,7 +4251,7 @@
                 "php": ">=5.4",
                 "phpcsstandards/phpcsextra": "^1.0",
                 "phpcsstandards/phpcsutils": "^1.0",
-                "squizlabs/php_codesniffer": "^3.7.1"
+                "squizlabs/php_codesniffer": "^3.7.2"
             },
             "require-dev": {
                 "php-parallel-lint/php-console-highlighter": "^1.0.0",
@@ -4287,7 +4287,7 @@
                 "source": "https://github.com/WordPress/WordPress-Coding-Standards",
                 "wiki": "https://github.com/WordPress/WordPress-Coding-Standards/wiki"
             },
-            "time": "2023-03-07T17:51:30+00:00"
+            "time": "2023-03-27T21:12:05+00:00"
         },
         {
             "name": "yoast/phpunit-polyfills",
@@ -4363,7 +4363,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2"
+        "php": "^8.1"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
