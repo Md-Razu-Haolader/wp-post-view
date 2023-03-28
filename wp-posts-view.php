@@ -33,7 +33,7 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 
-require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use MRH\WPPostView\PostView;
 
@@ -44,8 +44,7 @@ define( 'WPPV_PATH', __DIR__ );
  *
  * @return PostsView
  */
-function posts_view(): PostView
-{
+function posts_view(): PostView {
     return PostView::instance();
 }
 

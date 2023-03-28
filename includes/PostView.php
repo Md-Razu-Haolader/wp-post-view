@@ -4,8 +4,8 @@ declare( strict_types=1 );
 
 namespace MRH\WPPostView;
 
-final class PostView
-{
+final class PostView {
+
     /**
      * Static class object.
      *
@@ -14,13 +14,12 @@ final class PostView
     private static $instance;
 
     public const version = '1.0.0';
-    public const domain = 'wppv-post-view';
+    public const domain  = 'wppv-post-view';
 
     /**
      * Private class constructor.
      */
-    private function __construct()
-    {
+    private function __construct() {
         $this->define_constants();
         $this->init_hooks();
     }
@@ -28,12 +27,10 @@ final class PostView
     /**
      * Private class cloner.
      */
-    private function __clone()
-    {
+    private function __clone() {
     }
 
-    public static function instance(): PostView
-    {
+    public static function instance(): PostView {
         if ( !isset( self::$instance ) ) {
             self::$instance = new self();
         }
@@ -44,12 +41,11 @@ final class PostView
     /**
      * Defines the required constants.
      */
-    public function define_constants(): void
-    {
+    public function define_constants(): void {
         define( 'WPPV_VERSION', self::version );
         define( 'WPPV_URL', plugins_url( '', WPPV_FILE ) );
-        define( 'WPPV_ASSETS', WPPV_URL.'/assets' );
-        define( 'WPPV_INCLUDES', WPPV_PATH.'/includes' );
+        define( 'WPPV_ASSETS', WPPV_URL . '/assets' );
+        define( 'WPPV_INCLUDES', WPPV_PATH . '/includes' );
         define( 'WPPV_VIEW_COUNT_KEY', 'wppv_post_views_count' );
         define( 'WPPV_DOMAIN', self::domain );
     }
@@ -57,8 +53,7 @@ final class PostView
     /**
      * Initialize hooks.
      */
-    private function init_hooks(): void
-    {
+    private function init_hooks(): void {
         register_activation_hook( __FILE__, [$this, 'activate'] );
         add_action( 'plugins_loaded', [$this, 'init_classes'] );
     }
@@ -66,8 +61,7 @@ final class PostView
     /**
      * Updates info on plugin activation.
      */
-    public function activate(): void
-    {
+    public function activate(): void {
         $activator = new Activator();
         $activator->run();
     }
@@ -75,10 +69,10 @@ final class PostView
     /**
      * Initializes the necessary classes for the plugin.
      */
-    public function init_classes(): void
-    {
+    public function init_classes(): void {
         new Assets();
         new Frontend();
+
         if ( is_admin() ) {
             new Admin();
         }

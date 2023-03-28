@@ -10,13 +10,12 @@ use MRH\WPPostView\Frontend\Shortcode;
 /**
  * Frontend handler class.
  */
-class Frontend
-{
+class Frontend {
+
     /**
      * Frontend class constructor.
      */
-    public function __construct()
-    {
+    public function __construct() {
         new Shortcode();
         new PostViewHandler();
     }
