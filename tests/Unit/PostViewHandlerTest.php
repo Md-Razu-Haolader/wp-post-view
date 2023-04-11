@@ -2,7 +2,7 @@
 
 declare( strict_types=1 );
 
-namespace MRH\WPPostView\Tests;
+namespace MRH\WPPostView\Tests\Unit;
 
 use MRH\WPPostView\Frontend\PostViewHandler;
 use Yoast\PHPUnitPolyfills\TestCases\TestCase;
