@@ -54,7 +54,7 @@ final class PostView {
      * Initialize hooks.
      */
     private function init_hooks(): void {
-        register_activation_hook( __FILE__, [$this, 'activate'] );
+        register_activation_hook( WPPV_FILE, [$this, 'activate'] );
         add_action( 'plugins_loaded', [$this, 'init_classes'] );
     }
 
